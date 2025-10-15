@@ -1,3 +1,7 @@
+//Alex Krouse
+//October 10 2025
+//Online store that returns sellable and item inventory as well as gives profit amounts
+
 
 public class Main
 {

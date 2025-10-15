@@ -30,19 +30,28 @@ public class Store
 public double profit;
  private ArrayList <ItemForSale> items = new ArrayList <ItemForSale> ();
 
+
+ //pre-condition: items has been initalized and has values
+ //post-condition: items returned in a list 
  public ArrayList <ItemForSale> showItems (){
   System.out.println(items);
   return items;
 }
 
+// pre-condition: items has been initalized
+//post-condition: items has an added value to the end of the list
  public void addItems (ItemForSale newOne){
   items.add(newOne);
  }
 
+
+ // pre-condition: ItemForSale has values within and has been initalized
+//post-condition: items loses a value and profit is increased
  public void sell (ItemForSale ites){
   items.remove(ites);
   profit += ites.getPrice();
  }
+
 
  public String creator (String name){
   return name;
